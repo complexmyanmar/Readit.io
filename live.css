@@ -1,0 +1,34 @@
+.liveinfo{
+    background-color: #ED7D31;
+    width: 100%;
+    height: 380px;
+    
+  }
+
+.liveinfo table{
+    font-size: 30;
+    color: white;
+    font-weight: bolder;
+    font-family: Lucida Sans;
+    padding-left: 400;
+    padding-top: 50;
+    
+}
+
+.liveinfo input{
+    width: 500;
+    height: 30;
+    border-radius: 60px;
+    border: 0px;    
+}
+
+.liveinfo button{
+    margin-left: 520;
+    margin-top: 50;
+    width: 300;
+    height: 30;
+    background-color: #000E5E;
+    color: white;
+    font-weight: bolder;
+}
+

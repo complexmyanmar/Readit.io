@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/package.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar-logo">
+      <img src="img/logo.png" width="120" height="40" alt="Logo">
+    </div>
+    <div class="navbar-links">
+      <a href="Home.html">Home</a>
+      <a href="books.html">Books</a>
+      <a href="packages.html">Packages</a>
+      <a href="livediscussion.html">Live Discussion</a>
+      <a href="forum.html">Forum</a>
+      <a href="donation.html">Donation</a>
+    </div>
+    <div class="navbar-profile">
+      <a href="profile.html"><img src="img/default-profile.png" alt="Profile Image" id="navbar-profile-image"></a>
+      <a href="Log In.html" class="account">Log in</a>
+      <a href="Sign Up.html" class="account">Sign up</a>
+    </div>
+    </div>
+      <br><br><br><!--Nav-end-->
+      <br>
+      <div>
+        <center><h1 style="color: #ff8c00;">
+          Packages 
+        </h1>
+        <p><b>Choose the best package for you</b></p>
+      </center>
+      </div>
+      <div class="cardpack">
+         <div class="cardpack-info ">
+          <h2>Basic</h2><br>
+          <p>Book of the month</p><br>
+          <p>Access to one review forum and discussion group</p><br>
+          <p>Bookmark and drinks mug</p><br>
+          <p>Refreshments 1-box of coffee or tea</p>
+         </div><br><br>
+         <a href=""><button class="gradient-btn">Join Now!</button></a>
+      </div>
+      <div class="cardpack">
+        <div class="cardpack-info ">
+         <h2>Intermediate</h2><br>
+         <p>Book of the month + one own choice book</p>
+         <p>Access to two review forum and discussion group</p><br>
+         <p>Bookmark and book bag  </p><br>
+         <p>Refreshments 2-box of coffee or tea</p>
+        </div><br><br>
+        <a href=""><button class="gradient-btn">Join Now!</button></a>
+     </div>
+     <div class="cardpack">
+      <div class="cardpack-info ">
+       <h2>Advance</h2><br>
+       <p>Book of the month + three own choice book</p>
+       <p>Access to all review forum and discussion group</p><br>
+       <p>Choice of three item of merchandise</p>
+       <p>Refreshments 3-box of coffee, hot chocolate  or tea</p>
+      </div><br><br>
+      <a href=""><button class="gradient-btn">Join Now!</button></a>
+   </div>
+   <div class="cardpack">
+    <div class="cardpack-info ">
+     <h2>Customize</h2><br>
+     <p>We allow  user to customize a package as they want  </p><br>
+    <br><br> <br><br> <br><br> <br><br> <br><br>
+    </div><br><br>
+    <a href="customize.html"><button class="gradient-btn">Create Now!</button></a>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+  // Retrieve profile image from local storage
+  const profileImage = localStorage.getItem('profileImage');
+
+  // Update navbar profile image if profile image exists
+  if (profileImage) {
+    const navbarProfileImage = document.getElementById('navbar-profile-image');
+    navbarProfileImage.src = profileImage;
+  }
+});
+    </script>  
+
+ </div>
+</body>
+</html>

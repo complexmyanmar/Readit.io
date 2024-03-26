@@ -1,0 +1,201 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  
+  .navbar-links {
+    flex-grow: 1;
+    text-align: center;
+    font-family: Lucida Sans;
+    font-weight: bolder;
+  }
+  
+  .navbar-links a {
+    color: #ED7D31;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+  .navbar-profile {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .navbar-profile img {
+    width: 30px;
+    height: 30px; 
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .account{
+    text-decoration: none;
+    margin-left: 20;
+    font-size: 20;
+    font-weight: bolder;
+    font-family: Lucida Sans;
+    color: #000E5E;
+  }
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  }
+
+  .search-input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 1000px;
+  }
+
+  .search-button {
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: #ED7D31;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+    width: 100;
+  }
+
+  .search-button:hover{
+    background-color: #ff9a57;
+  }
+
+
+  .upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .image1 {
+    width: 30px;
+    height: 30px; 
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .textboxupload {
+    width: 970px; 
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+
+  .buttonupload {
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+    width: 100;
+  }
+
+  .buttonupload:hover{
+    background-color: #3898ff;
+  }
+
+  .forum{
+    background-color: #000E5E;
+    width: 1120;
+    height: 300;
+    margin-left: 200;
+    margin-top: 50;
+    border-radius: 20px;
+  }
+
+  .image{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .image img{
+    width: 50;
+    height: 50;
+    margin-top: 10;
+    margin-left: 40;
+  }
+  .image button{
+    margin-top: 10;
+    margin-right: 30;
+    width: 120px;
+    height: 30;
+    border-radius: 20px;
+    border: 1px;
+    font-weight: bolder;
+  }
+
+  .username{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .username p{
+    margin-top: 30;
+    color: white;
+    margin-left: 10;
+  }
+
+.forumtxt{
+  margin-left: 30;
+  margin-right: 30;
+  color: white;
+}
+
+.btnlike{
+  margin-left: 30;
+  width: 100;
+  border: none;
+  background-color: #ED7D31;
+}
+
+.btnlike:hover{
+  background-color: #ff9a57;
+}
+
+.btnfoot{
+  width: 750; 
+  height: 35;
+    margin-top: 2.5px;
+    margin-left: 3;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.frmfoot{
+  display: flex;
+}
+
+.footbuttonupload{
+  padding: 8px 16px;
+    border-radius: 5px;
+    background-color: #ED7D31;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+    width: 100;
+}
+
+.footbuttonupload:hover{
+  background-color: #ff9a57;
+}

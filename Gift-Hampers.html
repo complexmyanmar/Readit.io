@@ -1,0 +1,164 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read It | Gift Hampers</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+          <img src="img/logo.png" width="120" height="40" alt="Logo">
+        </div>
+        <div class="navbar-links">
+          <a href="Home.html">Home</a>
+          <a href="books.html">Books</a>
+          <a href="packages.html">Packages</a>
+          <a href="livediscussion.html">Live Discussion</a>
+          <a href="forum.html">Forum</a>
+          <a href="donation.html">Donation</a>
+        </div>
+        <div class="navbar-profile">
+          <img src="img/Profile.png" alt="Profile Image">
+          <a href="Log In.html" class="account">Log in</a>
+          <a href="Sign Up.html" class="account">Sign up</a>
+        </div>
+        </div>
+
+        <div>
+            <img src="img/gifthamers banner.png" width="100%" height="70%" alt="">
+        </div>
+        <div class="giftcard1">
+            <div class="giftmid">
+                <img src="img/gifthampers.jpg" alt="">
+                <div class="textgiftcard">
+                    <h1>Gift Hampers</h1>
+                    <p style="font-weight: bold; font-size: 25;">Items</p>
+                    <p style="font-weight: bold; font-size: 25;">Item 1 <br> Item 2 <br> Item 3 <br> Item 4 </p>
+                    <div class="quantity">
+                        <button class="minus-btn" type="button" id="minus-btn1">-</button>
+                        <input type="text" id="quantity1" value="1" class="ja">
+                        <button class="plus-btn" id="plus-btn1">+</button>
+                    </div><br>
+                    <input type="text" placeholder="Enter Your Gift Message">
+                    
+                </div>
+            </div>
+            <center><button class="giftnowbtn">Gift Now ! </button></center>
+            <br><br>
+        </div>
+        <br>
+        <div class="giftcard2">
+            <div class="giftmid">
+                <img src="img/gifthampers.jpg" alt="">
+                <div class="textgiftcard">
+                    <h1>Gift Hampers</h1>
+                    <p style="font-weight: bold; font-size: 25;">Items</p>
+                    <p style="font-weight: bold; font-size: 25;">Item 1 <br> Item 2 <br> Item 3 <br> Item 4 </p>
+                    <div class="quantity">
+                        <button class="minus-btn" type="button" id="minus-btn2">-</button>
+                        <input type="text" id="quantity2" value="1" class="ja">
+                        <button class="plus-btn" id="plus-btn2">+</button>
+                    </div><br>
+                    <input type="text" placeholder="Enter Your Gift Message">
+                    
+                </div>
+            </div>
+            <center><button class="giftnowbtn">Gift Now ! </button></center>
+            <br><br>
+        </div>
+        <br>
+        <div class="giftcard1">
+            <div class="giftmid">
+                <img src="img/gifthampers.jpg" alt="">
+                <div class="textgiftcard">
+                    <h1>Gift Hampers</h1>
+                    <p style="font-weight: bold; font-size: 25;">Items</p>
+                    <p style="font-weight: bold; font-size: 25;">Item 1 <br> Item 2 <br> Item 3 <br> Item 4 </p>
+                    <div class="quantity">
+                        <button class="minus-btn" type="button" id="minus-btn3">-</button>
+                        <input type="text" id="quantity3" value="1" class="ja">
+                        <button class="plus-btn" id="plus-btn3">+</button>
+                    </div><br>
+                    <input type="text" placeholder="Enter Your Gift Message">
+                    
+                </div>
+            </div>
+            <center><button class="giftnowbtn">Gift Now ! </button></center>
+            <br><br>
+            <div class="line"></div>
+        </div>
+        <br><br>
+      <div class="footer">
+        <div class="footertitle">
+          <h3>Find Us On !</h32>
+        <h2>Stay Informed</h2>
+        </div>
+        <div class="ficon-container">
+          <div class="footer2">
+            <div class="ficon">
+              <img src="img/fb.png"style="padding-right: 0px;" width="30" height="30">
+            </div>
+            <div class="ficon">
+              <img src="img/twitter.svg" style="padding-left: 10px;" width="30" height="30">
+            </div>
+            <div class="ficon">
+              <img src="img/Instagram-PNGinstagram-icon-png.png" style="padding-left: 10px;" width="30" height="30">
+            </div>
+            <div class="ficon">
+              <img src="img/youtube-icon-logo-black-and-white.png" style="padding-left: 10px;" width="30" height="30" >
+            </div>
+              <input type="text" name="" id="">
+              <button>Sign Up</button>
+          </div>
+        </div>
+        <br><br><br>
+       <div class="footcontainer">
+        <center>
+          <a href="about us.html" class="footcontainer">About Us</a>
+          <a href="contactus.html">Contact Us</a>
+          <a href="#">Follow Us</a>
+          <a href="Log In.html">Log In</a>
+          <a href="Sign Up.html">Sign Up</a>
+          <br><br><br><br>
+          <p>© Copyright 2024 by Read it</p>
+        </center>
+       </div>
+      </div><!--footer-end-->
+          <script>
+            let minusBtn= document.querySelectorAll(".minus-btn");
+            let plusBtn = document.querySelectorAll(".plus-btn");
+            
+            for(let i=0;i<minusBtn.length;i++)
+            {
+                minusBtn[i].setAttribute("disabled", "disabled");
+            }
+
+            for(let i = 0; i < plusBtn.length; i++){
+                plusBtn[i].addEventListener("click", () => {
+                    let valueCount = document.getElementById("quantity" + (i+1)).value;
+                    valueCount++;
+                    document.getElementById("quantity" + (i+1)).value = valueCount;
+
+                    if (valueCount > 1){
+                        document.getElementById("minus-btn" + (i+1)).removeAttribute("disabled","disabled");
+                    }
+                });
+            }
+            
+            for(let i = 0; i < minusBtn.length; i ++)
+            {
+                minusBtn[i].addEventListener("click", () => {
+                    let valueCount = document.getElementById("quantity" + (i+1)).value;
+                    valueCount--;
+                    document.getElementById("quantity" + (i+1)).value = valueCount;
+
+                    if(valueCount === 1) {
+                        document.getElementById("minus-btn" + (i+1)).setAttribute("disabled", "disabled")
+                    }
+
+                });
+            }
+        </script>
+</body>
+</html>  

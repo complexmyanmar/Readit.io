@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar-logo">
+      <img src="img/logo.png" width="120" height="40" alt="Logo">
+    </div>
+    <div class="navbar-links">
+      <a href="Home.html">Home</a>
+      <a href="books.html">Books</a>
+      <a href="packages.html">Packages</a>
+      <a href="livediscussion.html">Live Discussion</a>
+      <a href="forum.html">Forum</a>
+      <a href="donation.html">Donation</a>
+    </div>
+    <div class="navbar-profile">
+      <a href="profile.html"><img src="img/default-profile.png" alt="Profile Image" id="navbar-profile-image"></a>
+      <a href="Log In.html" class="account">Log in</a>
+      <a href="Sign Up.html" class="account">Sign up</a>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="dropdown-menu" id="dropdown-menu">
+      <a href="Home.html">Home</a>
+      <a href="books.html">Books</a>
+      <a href="packages.html">Packages</a>
+      <a href="livediscussion.html">Live Discussion</a>
+      <a href="forum.html">Forum</a>
+      <a href="donation.html">Donation</a>
+    </div>
+  </div>
+
+  <div class="profile-container">
+    <h2>User Profile</h2>
+    <div class="profile-image-container">
+      <img src="img/default-profile.png" alt="Profile Image" class="profile-image" id="profile-image">
+    </div>
+    <div class="file-input">
+      <input type="file" id="file-input" accept="image/*">
+      <label for="file-input">Choose Profile Picture</label>
+    </div>
+    <div class="profile-details">
+      <p><span>Username:</span> <span id="username"></span></p>
+      <p><span>Gender:</span> <span id="gender"></span></p>
+      <p><span>Country:</span> <span id="country"></span></p>
+    </div>
+    <button id="save-button">Save</button>
+  </div>
+
+  <script>
+    // JavaScript
+    // Retrieve user data from local storage
+    const username = localStorage.getItem('username');
+    const gender = localStorage.getItem('gender');
+    const country = localStorage.getItem('country');
+    let profileImage = localStorage.getItem('profileImage');
+
+    // Display user data
+    document.getElementById('username').textContent = username;
+    document.getElementById('gender').textContent = gender;
+    document.getElementById('country').textContent = country;
+
+    // Display profile image
+    const profileImageElement = document.getElementById('profile-image');
+    const navbarProfileImageElement = document.getElementById('navbar-profile-image');
+    if (profileImage) {
+      profileImageElement.src = profileImage;
+      navbarProfileImageElement.src = profileImage; // Update navbar profile image
+    }
+
+    // Handle file input change
+    const fileInput = document.getElementById('file-input');
+    fileInput.addEventListener('change', function(event) {
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          const imageUrl = e.target.result;
+          profileImageElement.src = imageUrl;
+          profileImage = imageUrl; // Update profile image variable
+        };
+        reader.readAsDataURL(file);
+      }
+    });
+
+    // Handle save button click
+    const saveButton = document.getElementById('save-button');
+    saveButton.addEventListener('click', function() {
+      // Save profile image URL to local storage
+      localStorage.setItem('profileImage', profileImage);
+      navbarProfileImageElement.src = profileImage; // Update navbar profile image
+      alert('Profile saved successfully!');
+    });
+    
+    
+  </script>
+</body>
+</html>

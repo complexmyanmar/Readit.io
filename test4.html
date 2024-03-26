@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gradient Button</title>
+<style>
+/* Styles for the button */
+.gradient-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    /* Gradient colors for the button background */
+    border-image: linear-gradient(45deg, #ff7e5f, #feb47b);
+    /* Gradient colors for the button border */
+    border-image-slice: 1;
+    /* This ensures the entire border is filled with the gradient */
+}
+
+/* Hover effect */
+.gradient-btn:hover {
+    background: linear-gradient(45deg, #ff6a3d, #fd9446);
+    border-image: linear-gradient(45deg, #ff6a3d, #fd9446);
+}
+
+/* Focus effect */
+.gradient-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+/* Styles for the card */
+.card {
+    background-color: #f0f0f0; /* Default background color */
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Change card color when button is hovered */
+.gradient-btn:hover ~ .card {
+    background-color: #ccc; /* New background color */
+}
+</style>
+</head>
+<body>
+
+<!-- Button markup -->
+<a href="#" class="gradient-btn">Gradient Button</a>
+
+<!-- Card markup -->
+<div class="card">
+    This is a card.
+</div>
+
+</body>
+</html>

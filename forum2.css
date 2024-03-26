@@ -1,0 +1,90 @@
+
+
+  .forum{
+    background-color: #000E5E;
+    width: 1300;
+    height: 320;
+    margin-left: 100;
+    margin-top: 20;
+    border-radius: 20px;
+  }
+
+  .image{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .image img{
+    width: 50;
+    height: 50;
+    margin-top: 10;
+    margin-left: 40;
+  }
+  .image button{
+    margin-top: 10;
+    margin-right: 30;
+    width: 120px;
+    height: 30;
+    border-radius: 20px;
+    border: 1px;
+    font-weight: bolder;
+  }
+
+  .username{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .username p{
+    margin-top: 30;
+    color: white;
+    margin-left: 10;
+  }
+
+.forumtxt{
+  margin-left: 30;
+  margin-right: 30;
+  color: white;
+}
+
+.btnlike{
+  margin-left: 30;
+  width: 100;
+  border: none;
+  background-color: #ED7D31;
+}
+
+.btnlike:hover{
+  background-color: #ff9a57;
+}
+
+.btnfoot{
+  width: 930; 
+  height: 35;
+    margin-top: 2.5px;
+    margin-left: 3;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.frmfoot{
+  display: flex;
+}
+
+.footbuttonupload{
+  padding: 8px 16px;
+    border-radius: 5px;
+    background-color: #ED7D31;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+    width: 100;
+}
+
+.footbuttonupload:hover{
+  background-color: #ff9a57;
+}
+

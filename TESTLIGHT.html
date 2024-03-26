@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<style> 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --light: #afafaf;
+    --dark: #454555;
+    --yw: #ffea00;
+    --grey: #efefef;
+}
+body{
+    background-color: #759a9b;
+    display: grid;
+    place-items: center;
+}
+.container{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: var(--dark);
+    margin-top: 20px;
+    border-radius: 20px;
+    transition: all 1s linear;
+}
+.bulb{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+   
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
+    border-bottom: none;
+    border-radius: 50%;
+    background-color: var(--light);
+    transition: all 0.5s ease-in-out;
+}
+.bulb-bottom{
+    position: absolute;
+    width: 80px;
+    height: 29px;
+    border-radius: 0 0 5px 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 165px;
+    border-top: none;
+    background-color: var(--light);
+    transition: all 0.5s ease-in-out;
+}
+.on{
+    background-color: var(--yw);
+    animation: change 7s linear infinite;
+}
+.inner{
+    position: absolute;
+    width: 35px;
+    height: 50px;
+    border: 2px solid var(--grey);
+    left: 50%;
+    transform: translate(-50%, -35%);
+    border-bottom: none;
+}
+.left{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border: 2px solid var(--grey);
+    transform: translate(-30%, -145%);
+    border-radius: 50% 50% 0 50%;
+}
+.right{
+      position: absolute;
+    width: 35px;
+    height: 35px;
+    border: 2px solid var(--grey);
+    transform: translate(38%, -145%);
+    border-radius: 50% 50% 50% 0%;
+    left: 42px;
+}
+.down{
+    position: absolute;
+    display: flex;
+   flex-direction: column;
+    justify-content: space-evenly;
+    width: 75px;
+    height: 40px;
+    background-color: #fb9460;
+    top: 193px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 5px 5px;
+}
+.d2{
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background-color: #fb9460;
+    top: 233px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 5px 5px;
+}
+.line{
+    width: 105%;
+    height: 4px;
+    background-color: #959595; 
+    border-radius: 10px;
+    transform: translateX(-2.5%);
+}
+.btn{
+    position: absolute;
+    bottom: 70px;
+    width: 110px;
+    height: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    color: #ff3450;
+    background-color: #e7e710;
+    margin-top: 30px;
+}
+h3{
+    text-align: center;
+}
+@keyframes change{
+    0%{
+        background-color: var(--yw);
+    }
+    35%{
+        background-color: #0077e9;
+    }
+    75%{
+        background-color: #ff0011;
+    }
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+ <div class="bulb "></div>
+ <div class="bulb-bottom ">
+ <div class="left"></div>
+ <div class="right"></div>
+   <div class="inner">
+     </div>  
+ </div>
+<div class="down">
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+</div>
+<div class="d2"></div>
+
+<button class="btn">ON</button>
+
+</div>
+<script>
+const container = document.querySelector(".container");
+const bulb = document.querySelector(".bulb");
+const bulbBottom = document.querySelector(".bulb-bottom");
+const btn = document.querySelector(".btn");
+btn.addEventListener("click", () => {
+    bulb.classList.toggle("on");
+ bulbBottom.classList.toggle("on"); 
+  
+  
+if(btn.classList.contains("off")) {
+ btn.textContent = "ON"  ;  btn.classList.remove("off");
+container.style.backgroundColor = "var(--dark)";    
+}else{
+   btn.textContent = "OFF";
+   btn.classList.add("off");
+   container.style.backgroundColor = "#efefef";
+}
+})
+</script>
+</body>
+
+</html>

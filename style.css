@@ -1,0 +1,1177 @@
+body{
+  font-family: lucida sans;
+}
+
+/* Basic navbar styling */
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: #fff;
+  padding: 10px;
+}
+
+.navbar-logo img {
+  height: 40px;
+  width: auto;
+}
+
+.navbar-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Align items to the center */
+}
+
+.navbar-links a {
+  color: #ED7D31;
+  font-weight: bolder;
+  text-decoration: none;
+  margin-right: 30px;
+  padding-left: 10;
+  padding-right: 20;
+}
+
+
+
+.navbar-profile {
+  display: flex;
+  font-weight: bolder;
+  align-items: center;
+  justify-content: flex-end; /* Align items to the end */
+}
+
+.navbar-profile img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 1px;
+}
+.navbar-profile a {
+  text-decoration: none;
+  color: #00072e;
+  margin-right: 30px;
+}
+
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  
+  width: 100%;
+  display: none;
+}
+
+.dropdown-menu.active {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  color: #ED7D31;
+  text-decoration: none;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .menu-icon {
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ED7D31;
+    font-size: 24px;
+    cursor: pointer;
+    
+  }
+}
+
+/* Media query to hide menu icon on larger screens */
+@media screen and (min-width: 769px) {
+  .menu-icon {
+    display: none;
+  }
+}
+
+
+
+.image-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.image-text img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-text {
+    margin-bottom: 20px; /* Add space between image and text */
+  }
+}
+.card {
+  width: calc(25% - 20px); 
+  margin: 10px;
+  padding: 20px; 
+  border: 1px solid #ccc;
+  text-align: center;
+  box-sizing: border-box; 
+  float: left; 
+  background-color: #ED7D31; 
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Scale the card on hover */
+}
+
+.card a{
+  text-decoration: none;
+}
+
+.card img {
+  width: 100%;
+  height: 250px; /* Set a specific height */
+  border-radius: 5px;
+}
+
+.card-info {
+  padding: 20px;
+}
+
+.card-info h2 {
+  font-size: 20px; /* Add "px" to specify font size */
+  color: white;
+  text-decoration: none;
+}
+
+.card-info p {
+  margin-bottom: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.btncard {
+  background-color: #000E5E;
+  width: 200px; /* Add "px" to specify width */
+  height: 30px; /* Add "px" to specify height */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btncard:hover {
+  background-color: #00072e;
+}
+
+.btnview {
+  background-color: #ED7D31; 
+  color: #fff; 
+  padding: 10px 20px;
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  margin: auto;
+  margin-top: 2px; /* Add "px" to specify margin */
+  margin-bottom: 20px;
+  width: 180px; /* Add "px" to specify width */
+}
+
+.btnview:hover {
+  background-color: #ff8c00; 
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .card {
+      width: calc(50% - 20px); /* Adjust width for smaller screens */
+  }
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  text-align: center; /* Center text */
+}    
+
+.card3 {
+  width: calc(30% - 20px);
+  margin-bottom: 20px;
+  background-color: #000E5E;
+  border-radius: 30px;
+  margin-left: 20;
+}
+
+.card3:hover {
+  transform: translateY(-10px); /* Move the card up on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a stronger shadow */
+}
+
+.card3 img {
+  width: 100%;
+  
+}
+
+.crdbtncard {
+  background-color: #ED7D31; 
+  color: #fff; 
+  padding: 10px 20px;
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  margin: auto;
+  margin-top: 20px; /* Add "px" to specify margin */
+  margin-bottom: 20px; /* Add "px" to specify margin */
+  width: 180px; /* Add "px" to specify width */
+}
+
+.crdbtncard:hover {
+  background-color: #ff8c00;
+}
+
+.containerimg {
+  position: relative;
+  display: inline-block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; 
+  font-weight: bolder;
+  font-size: 35px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 10px 20px;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Change to column layout for smaller screens */
+  }
+
+  .card3 {
+    width: calc(90% - 20px); /* Adjust width for smaller screens */
+  }
+}
+
+.cardhorizon{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  
+}
+
+.image-box {
+  position: relative;
+  flex: 1;
+}
+
+.image-box img {
+  width: 60%;
+  height: auto;
+}
+
+.image-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-box {
+  flex: 1;
+  padding: 20px;
+  background-color: #f0f0f0; 
+  color: #333;
+}
+
+.text-button {
+  margin-top: 10px; 
+}
+
+.cardhor {
+  display: flex;
+  flex-direction: column; /* Change to column layout on small screens */
+  width: 100%;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.card-imagehor {
+  max-width: 100%; /* Adjust to full width for smaller screens */
+}
+
+.card-imagehor img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-texthor {
+  padding: 20px;
+  background-color: #000E5E;
+  border-radius: 0 0 10px 10px; /* Adjust border-radius to match top corners */
+}
+
+.card-texthor h2 {
+  margin-top: 0;
+  color: white;
+}
+
+.card-texthor p {
+  margin-top: 0;
+  color: white;
+  font-size: 20px; /* Add "px" to specify font size */
+}
+
+.card-buttonhor {
+  margin-top: 20px; /* Add "px" to specify margin */
+  background-color: #ED7D31;
+  width: 100%; /* Adjust to full width for smaller screens */
+  height: 50px; /* Add "px" to specify height */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.card-buttonhor:hover {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+/* Media query for responsiveness */
+@media screen and (min-width: 768px) {
+  .cardhor {
+    flex-direction: row; /* Change back to row layout for larger screens */
+  }
+
+  .card-imagehor {
+    max-width: 40%; /* Reset max-width for larger screens */
+  }
+
+  .card-texthor {
+    border-radius: 10px 0 0 10px; /* Reset border-radius for larger screens */
+    flex: 1;
+  }
+
+  .card-buttonhor {
+    width: auto; /* Reset width for larger screens */
+  }
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-left: 30;
+  padding-right: 30;
+}
+
+.icon-container2 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-left: 100;
+  padding-right: 100;
+}
+.icon {
+  width: 100px; /* Adjust width as needed */
+  text-align: center;
+}
+
+.icon img {
+  width: 80px; 
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.icon p {
+  margin: 0;
+}
+
+.footer{
+  display :flow-root;
+  background-color: #ED7D31;
+  width: 100%;
+}
+
+.footer h3{
+  margin-top: 30;
+  margin: auto;
+  font-size: 20;
+}
+
+.ficon-container {
+  display: flex;
+  justify-content:left;
+  margin: auto;
+  
+}
+
+.footertitle{
+  display: flex;
+}
+.footertitle h3{
+  display: flex;
+  margin-left: 40;
+  font-family: lucida sans;
+}
+
+.footertitle h2{
+ margin: auto;
+  color: white;
+  font-family: lucida sans;
+}
+
+.footer2{
+  display: flex;
+  margin: auto;
+}
+
+.footer2 input{
+  margin: auto;
+}
+
+.footcontainer a{
+  color: white;
+  text-decoration: none;
+  margin: 15px;
+  font-family: lucida sans;
+}
+
+.footcontainer{
+  color: white;
+}
+
+.giftbg{
+  background-color: #ED7D31;
+  
+}
+
+.imgtxt{
+  display: flex;
+}
+
+.imgtxt button{
+  border: 0;
+  border-radius: 6px;
+}
+
+.imgtxt button:hover{
+ background-color: #D3D3D3;
+ color: white;
+}
+
+.giftbg img{
+  justify-content: left;
+  width: 500;
+  height: 300;
+  margin-top: 20;
+  margin: auto;
+}
+
+.giftbg p{
+  padding-left: 20;
+  font-size: 20;
+}
+
+.btngift{
+  margin: auto;
+  width: 1000;
+  height: 50;
+  margin-bottom: 40;
+  font-weight: bolder;
+  font-size: 30;
+  border: 0;
+  border-radius: 120px;
+  color: #000E5E;
+}
+
+.btngift:hover{
+  background-color: #D3D3D3;
+}
+
+.booksearch-box {
+  margin: auto;
+  margin-top: 200;
+}
+
+.booksearch-box input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 500px;
+}
+
+.booksearch-box button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #ff8c00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.booksearch-box button[type="submit"]:hover {
+  background-color: #ffbd66;
+}
+
+.btn1n2{
+  padding: 10px 20px;
+  width: 300;
+  height: 40;
+  background-color: #000E5E;
+  font-family: Lucida Sans;
+  font-size: 20;
+  color: white;
+}
+
+.cardpack {
+  width: calc(25% - 20px); 
+  margin: 10px;
+  padding: 20px; 
+  border: 3px solid #ccc;
+  text-align: center;
+  box-sizing: border-box; 
+  float: left; 
+  background-color: white;
+  border-color: #ED7D31;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+.cardpack h2{
+  margin-top: 10;
+  font-size: 35;
+  color: #000000;
+  font-family: lucida sans;
+}
+.cardpack:hover{
+  background-color: #ED7D31;
+    
+}
+.card-info {
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: lucida sans;
+}
+
+.cardpack-info p {
+  margin-bottom: 0;
+  font-size: 20;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+.gradient-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  /* Gradient colors for the button background */
+  border-image: linear-gradient(45deg, #ff7e5f, #feb47b);
+  /* Gradient colors for the button border */
+  border-image-slice: 1;
+  /* This ensures the entire border is filled with the gradient */
+}
+
+
+.gradient-btn:hover {
+  background: linear-gradient(45deg, #ff6a3d, #fd9446);
+  border-image: linear-gradient(45deg, #ff6a3d, #fd9446);
+}
+
+.gradient-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.btncard{
+  
+  background-color: #000E5E;
+  width: 200;
+  height: 30;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btncard:hover {
+  background-color: #00072e; /
+}
+
+.custbtn{
+  background-color: #000E5E;
+  height: 30%;
+}
+
+.custbtn button{
+  background-color: #ED7D31;
+  border: 0px;
+  width: 300px;
+  height: 50px;
+  border-radius: 60px;
+  color: white;
+  font-family: lucida sans;
+  font-size: 20;
+  font-weight: bolder;
+}
+
+.livebtn{
+  display: flex;
+  margin: auto;
+}
+
+.livebtn img{
+  
+  margin-top: 30;
+  width: 50;
+  height: 50;
+}
+
+.iconlive{
+  display: flex;
+  margin: auto;
+}
+
+.iconlive p{
+  margin: auto;
+  margin-top: 40;
+  font-family: lucida sans;
+  font-weight: bolder;
+}
+
+
+.iconlive2{
+  display: flex;
+  margin-left: 20px;
+}
+
+.iconlive2 p{
+  margin: auto;
+  margin-top: 40;
+  font-family: lucida sans;
+  font-weight: bolder;
+}
+
+.livecard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 550px;
+  background-color: #000E5E;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.livecard img {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+}
+
+.livecard-body {
+  padding: 20px;
+}
+
+.liveicon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-color: #000E5E;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 10px;
+}
+
+.livebutton-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.livecard-body p{
+  color: white;
+  font-family: lucida sans;
+  font-size: 17;
+}
+.livebutton {
+  padding: 10px 20px;
+  background-color: #ED7D31;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.livebutton:hover {
+  background-color: #ff8c00;
+}
+
+.donationfoot {
+  display: flex;
+  margin-top: 1;
+  justify-content: space-between;
+}
+
+.donationfoot img{
+  width: 70;
+  height: 70;
+}
+
+.donationfoot button{
+  width: 300;
+  height: 70;
+}
+
+.bt{
+  position: relative;
+    display: inline-block;
+}
+
+.bt img{
+  display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.bt button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300;
+  height: 70;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background-color: #ED7D31;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bt button:hover{
+    background-color: #ff8c00;
+}
+
+.donatebtn{
+  display: flex;
+}
+
+.donatebtn p{
+  padding-top: 20;
+}
+
+.donationfoot1 p{
+  color: black;
+  font-size: 20;
+  font-weight: bolder;
+}
+
+.giftcard1{
+  background-color: #ED7D31;
+}
+.giftcard2{
+  background-color: #000E5E;
+}
+
+.giftmid{
+  display: flex;
+  justify-content: space-between;
+}
+.giftmid img{
+  width: 500;
+  height: 350;
+  padding-left: 250;
+  padding-top: 20;
+  padding-bottom: 20;
+}
+.textgiftcard{
+  padding-right: 280;
+  font-family: lucida sans;
+  color: white;
+}
+
+.giftmid input{
+  width: 450;
+  height: 30;
+  border-radius: 10px;
+  border: 0;
+  
+}
+
+.quantity{
+  display: flex;
+  justify-content: start;
+}
+.quantity input{
+ width: 30;
+ height: 30;
+ border-radius: 10px;
+ border: 0;
+}
+.bt{
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 0;
+  background: rgb(255, 255, 255);
+  
+}
+
+.ja{
+  border: none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  
+  font-size: 20px;
+  color: black;
+ 
+}
+
+.minus-btn{
+  padding-top: 0;
+  width: 30;
+  height: 30;
+  margin-right: 5;
+  border-radius: 10px;
+  border: 0;
+}
+
+.plus-btn{
+  padding-top: 0;
+  width: 30;
+  height: 30;
+  margin: auto;
+  border-radius: 10px;
+  border: 0;
+}
+
+.giftnowbtn{
+  width: 950;
+  height: 30;
+  border-radius: 10px;
+  border: 0;
+}
+
+.textgiftcard2{
+  padding-right: 280;
+  font-family: lucida sans;
+  color: white;
+}
+
+.pt1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.textaboutus h1{
+  font-family: lucida sans;
+  padding-left: 250;
+  font-size: 40;
+  color: #ED7D31;
+}
+
+.textaboutus p{
+  font-family: lucida sans;
+  padding-left: 80;
+  font-size: 35;
+  font-weight: bolder;
+  padding-right: 35;
+}
+
+.imgaboutus{
+  padding-right: 600;
+ width: 100;
+}
+
+.mission{
+  background-color: #000E5E;
+}
+
+.missionheader{
+  display: flex;
+}
+
+.missionheader img{
+  padding-left: 50px;
+}
+
+.missionheader h1{
+  color: #ED7D31;
+  font-family: lucida sans;
+  padding-left: 330;
+  font-size: 40;
+}
+
+.missionheader p{
+  font-family: lucida sans;
+  padding-left: 80;
+  font-size: 35;
+  font-weight: bolder;
+  padding-right: 35;
+  color: white;
+}
+
+.imgteam{
+ display: flex;
+ justify-content: space-between;
+ border-radius: 50%;
+ padding-left: 80;
+ padding-right: 80;
+
+  
+}
+
+.imgcircle{
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.role{
+  display: flex;
+}
+
+.contactus{
+  background-color: #000E5E;
+  width: 80%;
+  margin: auto;
+  border-radius: 30px;
+}
+
+.contacttxt{
+  display: flex;
+  justify-content: space-between;
+  color: #ED7D31;
+  font-size: 30;
+  padding-left: 100;
+  padding-right: 335;
+}
+
+.contactinput{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100;
+  padding-right: 100;
+
+}
+
+.txtareacontactus{
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 5px; 
+  padding-right: 5;
+}
+
+.big-text-area {
+  width: 100%;
+  height: 300px; 
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical; 
+  box-sizing: border-box; 
+}
+
+.contactusbtn{
+  width: 200;
+  margin: auto;
+  margin-top: 30;
+  background-color: #ED7D31;
+  height: 30;
+  border: 0px;
+  border-radius: 30px;
+  color: white;
+  font-family: lucida sans;
+  font-weight: bolder;
+}
+
+.bdy1{
+  padding-left: 290;
+  font-family: lucida sans;
+  font-weight: bolder;
+}
+
+.bdy1 input{
+  width: 1000;
+  margin-top: 30;
+}
+
+.bdy1 select{
+  width: 500;
+  margin-top: 10;
+}
+
+.display2{
+  display: flex;
+  justify-content:flex-start;
+}
+
+.bdy2{
+  padding-left: 290;
+  font-family: lucida sans;
+  font-weight: bolder;
+}
+
+.input2{
+   margin: auto;
+   width: 490;
+   height: 30;
+   margin-top: 10;
+}
+
+.bdy2 select{
+  width: 500;
+  height: 30;
+  margin-top: 10;
+}
+
+.input3{
+  margin-top: 10;
+  width: 500;
+  height: 30;
+}
+
+.input4{
+  width: 1000;
+  margin-top: 30;
+}
+
+.sbtbtn{
+  width: 300;
+  height: 30;
+  background-color: green;
+  border: 0;
+  border-radius: 30px;
+  color: white;
+  font-family: lucida sans;
+  font-weight: bolder;
+}
+
+.tbl{
+  background: #000E5E;
+  display: flex;
+  border-radius: 16px;
+  width: 85%;
+  margin: auto;
+}
+
+.pt{
+  display: flex;
+  margin-left: 400px;
+  
+}
+
+.pt p{
+  font-family: lucida sans;
+  font-weight: bolder;
+}
+
+.pt button{
+  margin-left: 30;
+  width: 100;
+}
+
+.pt input{
+  width: 600;
+  height: 25;
+}
+
+.cimg{
+  display: flex;
+  width: 340;
+  height: 330;
+  
+}
+
+.btnadd{
+  background-color: #ED7D31;
+  width: 170;
+  height: 30;
+  border-radius: 6px;
+  border: none;
+  color: white;
+}
+
+.btnadd:hover{
+  background-color: #ff8c00;
+}
+
+.footerc{
+  display: flex;
+}
+
+.pack2{
+  background-color: #364bc3;
+  height: 75%;
+}
+
+.pack2 h1{
+  color: white;
+  font-family: lucida sans;
+  padding-top: 20;
+}
+
+.cb{
+  display: flex;
+  flex-direction: column;
+}
+
+.cb label{
+  color: #ED7D31;
+  font-weight: bolder;
+  font-size: 20;
+
+}
+
